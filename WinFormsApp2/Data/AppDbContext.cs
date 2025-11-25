@@ -22,6 +22,16 @@ namespace WinFormsApp2.Data
         public DbSet<UserRole> UserRoles { get; set; }
         public DbSet<Permission> Permissions { get; set; }
         public DbSet<RolePermission> RolePermissions { get; set; }
+        public DbSet<Campaign> Campaigns { get; set; }
+        public DbSet<AdCreative> AdCreatives { get; set; }
+        public DbSet<TargetingCriteria> TargetingCriterias { get; set; }
+        public DbSet<BudgetAllocation> BudgetAllocations { get; set; }
+        public DbSet<AdPerformance> AdPerformances { get; set; }
+        public DbSet<ABTest> ABTests { get; set; }
+        public DbSet<AudienceSegment> AudienceSegments { get; set; }
+        public DbSet<AdPlacement> AdPlacements { get; set; }
+        public DbSet<PerformanceReport> PerformanceReports { get; set; }
+        public DbSet<Invoice> Invoices { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
